@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  quickstart:
+    image: ${DOCKER_REGISTRY-}quickstart
+    build:
+      context: .
+      dockerfile: src/QuickStart/Dockerfile
